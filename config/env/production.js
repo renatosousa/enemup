@@ -47,8 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: 'sails-mongo',
+      url: 'mongodb://heroku_x7vkf7ls:pppc1okoriaf4ahggsq0dq8ij4@ds335668.mlab.com:35668/heroku_x7vkf7ls',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -251,10 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'http://localhost:1337',
-       'http://enemup.herokuapp.com',
-       'https://enemup.herokuapp.com',
-       'https://localhost:1337',
+      'https://enemup.herokuapp.com',
      ],
 
 
@@ -373,7 +370,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: '/',
+    baseUrl: 'https://enemup.herokuapp.com',
     internalEmailAddress: 'support@enemup.herokuapp.com',
 
     // mailgunDomain: 'mg.example.com',
