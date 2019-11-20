@@ -373,7 +373,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'enemup.herokuapp.com',
+    baseUrl: '/',
     internalEmailAddress: 'support@enemup.herokuapp.com',
 
     // mailgunDomain: 'mg.example.com',
