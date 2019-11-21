@@ -1,0 +1,16 @@
+<div id="listar" v-cloak>
+
+    <div class="container">
+
+        <h1>Listar Questões</h1>
+
+        <div class="card" v-for="questao in questoes">
+          <p v-text="questao.enunciado"></p>
+          <div v-for="alternativa in questao.alternativas">
+              <input type="radio"><span v-text="alternativa"></span>    
+          </div>
+          <br/>
+        </div>
+    </div>    
+</div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
