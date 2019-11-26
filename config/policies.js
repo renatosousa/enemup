@@ -22,5 +22,7 @@ module.exports.policies = {
   'legal/view-privacy': true,
   'deliver-contact-form-message': true,
   'questoes/*': true,
+  'objetos/*': true,
+  'competencia/*': true,
 
 };
